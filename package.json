@@ -1,0 +1,22 @@
+{
+  "name": "angular-alurabank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelmauricioaraujo/angular-alurabank.git"
+  },
+  "author": "Rafael Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelmauricioaraujo/angular-alurabank/issues"
+  },
+  "homepage": "https://github.com/rafaelmauricioaraujo/angular-alurabank#readme",
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
+}
