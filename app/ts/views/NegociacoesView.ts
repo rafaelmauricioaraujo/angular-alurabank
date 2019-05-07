@@ -1,14 +1,17 @@
 class NegociacoesView {
 
-    private _elemento:Element;
-    constructor(seletor: string){
+    private _elemento: Element;
+    constructor(seletor: string) {
         this._elemento = document.querySelector(seletor);
+    }
+
+    update(): void {
+        this._elemento.innerHTML = this.template();
     }
 
     template(): string {
 
         return `
-
         <table class="table table-hover table-bordered">
             <thead>
                 <tr>
@@ -25,7 +28,6 @@ class NegociacoesView {
             <tfoot>
             </tfoot>
         </table>   
-
-        `;
+        `
     }
 }
