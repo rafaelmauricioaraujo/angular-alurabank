@@ -9,10 +9,5 @@ class NegociacaoController {
         event.preventDefault();
         const negociacao = new Negociacao(new Date(this._inputData.value.replace(/-/g, ',')), parseInt(this._inputQuantidade.value), parseFloat(this._inputValor.value));
         this._negociacoes.adiciona(negociacao);
-        this._negociacoes.paraArray().forEach(negociacao => {
-            console.log(negociacao.data);
-            console.log(negociacao.quantidade);
-            console.log(negociacao.valor);
-        });
     }
 }
