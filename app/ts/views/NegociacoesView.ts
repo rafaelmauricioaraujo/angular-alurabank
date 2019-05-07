@@ -5,7 +5,7 @@ class NegociacoesView {
         this._elemento = document.querySelector(seletor);
     }
 
-    update(model: Negociacoes): void {
+    update(model: Negociacoes) {
         this._elemento.innerHTML = this.template(model);
     }
 
@@ -23,7 +23,7 @@ class NegociacoesView {
             </thead>
 
             <tbody>
-                ${model.paraArray().map(negociacao => {
+                ${model.paraArray().map(negociacao => 
                     `
                         <tr>
                             <td>${negociacao.data.getDate()} / ${negociacao.data.getMonth() + 1} / ${negociacao.data.getFullYear()}</td>
@@ -32,7 +32,7 @@ class NegociacoesView {
                             <td>${negociacao.volume}</td>
                         </tr>
                         
-                    `}).join('')}
+                    `).join('')}
             </tbody>
 
             <tfoot>
