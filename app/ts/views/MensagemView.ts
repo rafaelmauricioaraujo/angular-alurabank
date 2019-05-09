@@ -1,7 +1,11 @@
-class MensagemView extends View<string> {
+namespace Views{
 
-    template(model: string) {
-        return `<p class="alert-info">${model}</p>`
+    export class MensagemView extends Views.View<string> {
+
+        template(model: string) {
+            return `<p class="alert-info">${model}</p>`
+        }
+    
     }
 
 }
