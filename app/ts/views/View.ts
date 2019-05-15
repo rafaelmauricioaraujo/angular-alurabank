@@ -1,3 +1,4 @@
+import { logarTempoDeExecucao } from '../helpers/decorators/index'
 export abstract class View<T> {
 
     private _elemento: JQuery;
@@ -8,9 +9,10 @@ export abstract class View<T> {
         this._escape = escape;
     }
 
+    @logarTempoDeExecucao()
     update(model: T): void {
         let template = this.template(model);
-        if(this._escape){
+        if (this._escape) {
             template = template.replace(/<script>[\s\S]*?<\/script>/, '');
         }
         this._elemento.html(template);
